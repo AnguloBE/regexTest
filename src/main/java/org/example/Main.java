@@ -33,6 +33,56 @@ public class Main {
 
         generarDescripcion();
 
+        cambiarPalabra("fecha", "fecha de");
+        cambiarPalabra("numero", "número de");
+        cambiarPalabra("clave", "clave de");
+        cambiarPalabra("importe", "importe de");
+        cambiarPalabra("descripcion", "descripcion de");
+
+        cambiarPalabra("clv", "clave de");
+        cambiarPalabra("imp", "importe de");
+        cambiarPalabra("fec", "fecha de");
+        cambiarPalabra("desc", "descripcion de");
+        cambiarPalabra("id", "identificador de");
+        cambiarPalabra("nom", "nombre de");
+        cambiarPalabra("bd", "base de datos");
+
+
+        cambiarPalabra("prc", "porcentaje");
+        cambiarPalabra("cte", "cliente");
+        cambiarPalabra("Cob", "cobranza");
+        cambiarPalabra("Tel", "telefonica");
+        cambiarPalabra("Punt", "puntaje de");
+        cambiarPalabra("Ref", "feferencia");
+        cambiarPalabra("idu", "identificador de");
+
+        cambiarPalabra("corresp", "correspondiente");
+        cambiarPalabra("num", "número de");
+
+        cambiarPalabra("vtas", "ventas");
+        cambiarPalabra("ant", "anterior");
+        cambiarPalabra("numerocliente", "numero de cliente");
+        cambiarPalabra("saldoalafecha", "saldo a la fecha");
+        cambiarPalabra("claveant", "clave anterior");
+        cambiarPalabra("mes", "mes de");
+        cambiarPalabra("des", "descripcion de");
+
+        cambiarPalabra("tipo", "tipo de");
+        cambiarPalabra("facturao", "factura o");
+
+        cambiarPalabra("saldo", "saldo de");
+        cambiarPalabra("bonificacion", "bonificacion de");
+        cambiarPalabra("plazo", "plazo de");
+        cambiarPalabra("devolucion", "devolucion de");
+        cambiarPalabra("opc", "opcion de");
+        cambiarPalabra("tda", "tienda");
+        cambiarPalabra("parametrico", "parametrico de");
+        cambiarPalabra("movto", "movimiento");
+        cambiarPalabra("cantidad", "cantidad de");
+        cambiarPalabra("subtipo", "subtipo de");
+        cambiarPalabra("comision", "comision de");
+        cambiarPalabra("puntualidad", "puntualidad de");
+
 
         System.out.println("----------------------------------------------------------------------------------------------------------------------");
         for (Fila fila : filas) {
@@ -41,6 +91,29 @@ public class Main {
                     "," + fila.getLongitud() +
                     "," + fila.getDescripcion());
         }
+    }
+
+    public static void cambiarPalabra(String laAbreviacion, String laPalabra) {
+
+        for (Fila fila : filas) {
+            String tempDescripcion = "";
+            for (String palabra : fila.getDescripcion().split(" ")) {
+                palabra = palabra.toLowerCase();
+                if (palabra.equals(laAbreviacion)) {
+
+                    tempDescripcion += (" "+laPalabra);
+                } else {
+                    tempDescripcion += (" "+palabra);
+                }
+
+            }
+            tempDescripcion = tempDescripcion.trim();
+            if (!tempDescripcion.isEmpty()) {
+                tempDescripcion = tempDescripcion.substring(0, 1).toUpperCase() + tempDescripcion.substring(1);
+            }
+            fila.setDescripcion(tempDescripcion);
+        }
+
     }
 
     public static void generarDescripcion() {
