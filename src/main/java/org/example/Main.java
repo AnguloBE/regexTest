@@ -280,7 +280,43 @@ public class Main {
         cambiarPalabra("importedxc", "importe");
         cambiarPalabra("quienentrega", "quien entrega");
         cambiarPalabra("ctes", "clientes");
-        //cambiarPalabra("ctes", "clientes");
+
+        cambiarPalabra("abo", "abono");
+        cambiarPalabra("mini", "minimo");
+        cambiarPalabra("registroscifra", "registros cifra");
+        cambiarPalabra("registrosmaestro", "registros maestro");
+        cambiarPalabra("numerocredito", "numero de credito");
+        cambiarPalabra("numerociudad", "numero de ciudad");
+        cambiarPalabra("regioncobranzas", "region de cobranzas");
+        cambiarPalabra("flag", "identificador de");
+        cambiarPalabra("reg", "registros");
+        cambiarPalabra("sql", "sql server");
+        cambiarPalabra("pg", "postgres");
+        cambiarPalabra("gte", "gerente de");
+        cambiarPalabra("ta", "tiempo aire");
+        cambiarPalabra("totalclientes", "total de clientes");
+        cambiarPalabra("txt", "texto");
+        cambiarPalabra("ctesa", "clientes a");
+        cambiarPalabra("ctaconcentradora", "cuenta concentradora");
+        cambiarPalabra("saldoctasperdidas", "saldo de cuentas perdidas");
+        cambiarPalabra("ctaperdida", "cuenta perdida");
+        cambiarPalabra("fechacosecha", "fecha de cosecha");
+        cambiarPalabra("saldocartera", "saldo de cartera");
+        cambiarPalabra("plazoventa", "plazo de venta");
+        cambiarPalabra("tipoproducto", "tipo de producto");
+        cambiarPalabra("dif", "diferencia");
+        cambiarPalabra("", "");
+        cambiarPalabra("", "");
+        cambiarPalabra("", "");
+        cambiarPalabra("", "");
+        cambiarPalabra("", "");
+        cambiarPalabra("", "");
+        cambiarPalabra("", "");
+        cambiarPalabra("", "");
+        cambiarPalabra("", "");
+
+
+        //cambiarPalabra("", "");
 
 
 
@@ -371,7 +407,7 @@ public class Main {
 
         System.out.println(query);
 
-        String regex = "^\\t?\\s?\\[?([\\w\\ñ]*)\\]?|\\s\\[?([a-z]+)\\]?\\s|\\((\\d+)\\)";
+        String regex = "^\\t?\\s?\\[?([\\w\\ñ]*)\\]?|\\s\\[?([a-z]+)\\]?\\s?|\\((\\d+)\\)";
 
         Pattern pattern = Pattern.compile(regex);
 
