@@ -371,7 +371,7 @@ public class Main {
 
         System.out.println(query);
 
-        String regex = "^\\t?\\s?([\\w\\ñ]*)|\\s([a-z]+)\\s|\\((\\d+)\\)";
+        String regex = "^\\t?\\s?\\[?([\\w\\ñ]*)\\]?|\\s\\[?([a-z]+)\\]?\\s|\\((\\d+)\\)";
 
         Pattern pattern = Pattern.compile(regex);
 
