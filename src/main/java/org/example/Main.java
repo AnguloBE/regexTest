@@ -344,8 +344,8 @@ public class Main {
         cambiarPalabra("flaghoracontacto", "identificador de hora de contacto");
         cambiarPalabra("flg", "identificador");
         cambiarPalabra("clienteprospecto", "cliente prospecto");
-        cambiarPalabra("", "");
-        cambiarPalabra("", "");
+        cambiarPalabra("Sdo", "saldo");
+        cambiarPalabra("sdo", "saldo");
         cambiarPalabra("", "");
         cambiarPalabra("", "");
         cambiarPalabra("", "");
